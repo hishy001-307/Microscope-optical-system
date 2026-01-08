@@ -349,14 +349,409 @@ $r$ が $1/D$ に比例するという理論的予想に沿う振る舞いが確
 \subsection*{\underline{目的}}
 実験4で構成したケーラー照明系を照明系として用い、対物レンズ（$f=70\,\mathrm{mm}$）と結像レンズ（$f=500\,\mathrm{mm}$）からなる観察系を組み上げて、簡易顕微鏡を構成することを目的とする。
 その上で、格子縞試料（$20\,\mu\mathrm{m}$、$100\,\mu\mathrm{m}$間隔）の像がカメラ上に結像することを確認し、必要な焦点調整と光軸調整を行う。
-さらに、視野絞り直後に650\,nmフィルタを挿入した際の像の変化を観察し、顕微鏡光学系の共役関係と調整手順を理解する。
+さらに、視野絞り直後に650\,nmフィルタや450\,nmフィルタを挿入した際の像の変化を観察する。
+
+\subsection*{\underline{方法}}
+実験4で調整したケーラー照明系を維持したまま、試料位置に格子縞試料(それぞれ25\,$\mu\mathrm{m}$, 100\,$\mu\mathrm{m}$)を設置した。
+次に、試料の直後に対物レンズ（焦点距離 $f=70\,\mathrm{mm}$）を光軸上に配置し、
+対物レンズによって得られる中間像を結像レンズ（焦点距離 $f=500\,\mathrm{mm}$）でカメラ撮像面に結像させる観察系を構成した。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/5_micro.png}
+  \caption{顕微鏡光学系の作図。ケーラー照明系を照明系として用い、対物レンズと結像レンズからなる観察系を組み上げた。}
+  \label{fig:microscope_setup}
+\end{figure}
+
+光軸調整は、（i）各レンズ・絞りの中心が同一直線上に来るようにレール上の高さと横位置を合わせ、
+（ii）カメラ画像上で像のケラレや片ボケが最小となるようにレンズ角度と位置を微調整することで行った。
+焦点調整は、カメラを結像レンズ後方で前後に移動させ、格子縞のコントラストが最大となる位置を探すことで行った。
+
+格子縞試料として、周期 $20\,\mu\mathrm{m}$ および $100\,\mu\mathrm{m}$ の2種類を用い、それぞれについて同様に結像を確認し、必要に応じて試料位置および対物レンズ位置を微調整した。
+
+また、視野絞り直後に中心波長 650\,nm および 450\,nm のバンドパスフィルタを挿入し、
+フィルタなしの場合と比較して、像の明るさ、コントラスト、分解能（縞の見え方）の変化を観察・記録した。
+
+\clearpage
+\subsection*{\underline{結果}}
+
+本実験では、格子縞試料（$20\,\mu\mathrm{m}$、$100\,\mu\mathrm{m}$）を用いて顕微鏡像を撮影し、カラーフィルタおよび各絞りの開閉が像に与える影響を比較した。
+
+\subsubsection*{格子縞像の結像確認（フィルタなし）}
+まず、$100\,\mu\mathrm{m}$ 間隔の格子縞試料を試料ホルダに固定し、カメラ上に格子縞像が結像することを確認した後、その像を撮影した（図\ref{fig:exp5_100um_nofilter}）。
+次に、$20\,\mu\mathrm{m}$ 間隔の格子縞試料に戻し、同様に焦点および光軸を微調整して像を得た。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/20um.png}
+  \includegraphics[width=0.95\linewidth]{./figure/5_100um_nofilter.png}
+  \caption{$20\,\mu\mathrm{m}$,$100\,\mu\mathrm{m}$ 格子縞試料の顕微鏡像（フィルタなし）。まず像がカメラ上に結像することを確認した後に撮影した。}
+  \label{fig:exp5_100um_nofilter}
+\end{figure}
+
+\subsubsection*{650\,nmフィルタ挿入時（$20\,\mu\mathrm{m}$）}
+視野絞り直後に中心波長 650\,nm のフィルタを挿入すると、像は暗くなり、初期状態ではピントが外れて見えた。
+そこで試料位置を微調整し、$20\,\mu\mathrm{m}$ 格子縞像が再び明瞭に観察される条件を探索して撮影した（図\ref{fig:exp5_20um_650}）。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/650nm_20um_defocus.png}
+  \includegraphics[width=0.95\linewidth]{./figure/650nm_20um_focus.png}
+  \caption{$20\,\mu\mathrm{m}$ 格子縞試料の顕微鏡像（650\,nmフィルタ挿入）。フィルタ挿入後に試料位置を再調整して撮影した。}
+  \label{fig:exp5_20um_650}
+\end{figure}
+
+\subsubsection*{450\,nmフィルタ挿入時（$20\,\mu\mathrm{m}$）}
+次にフィルタを中心波長 450\,nm に変更した。
+再び像がぼける傾向が見られたため、試料位置を再調整し、$20\,\mu\mathrm{m}$ 格子縞像を撮影した（図\ref{fig:exp5_20um_450}）。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/450nm_20um_defocus.png}
+  \includegraphics[width=0.95\linewidth]{./figure/450nm_20um_focus.png}
+  \caption{$20\,\mu\mathrm{m}$ 格子縞試料の顕微鏡像（450\,nmフィルタ挿入）。フィルタ変更後に試料位置を再調整して撮影した。}
+  \label{fig:exp5_20um_450}
+\end{figure}
+
+\subsubsection*{$20\,\mu\mathrm{m}$および$100\,\mu\mathrm{m}$格子縞像（450\,nm）}
+450\,nmフィルタを挿入した状態のまま、試料位置を調整して $20\,\mu\mathrm{m}$ および $100\,\mu\mathrm{m}$ 格子縞の両方について像を撮影した（図\ref{fig:exp5_20um_450_final}, 図\ref{fig:exp5_100um_450_final}）。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/450nm_20um_focus.png}
+  \caption{$20\,\mu\mathrm{m}$ 格子縞試料の顕微鏡像（450\,nmフィルタ、最終調整後）。}
+  \label{fig:exp5_20um_450_final}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/450nm_100um.png}
+  \caption{$100\,\mu\mathrm{m}$ 格子縞試料の顕微鏡像（450\,nmフィルタ、最終調整後）。}
+  \label{fig:exp5_100um_450_final}
+\end{figure}
+
+\subsubsection*{絞り開閉による像変化}
+最後に、照明側の視野絞りおよび開口絞り（コンデンサ絞り）、ならびに観察側の開口絞り（対物絞り）をそれぞれ開閉し、カメラに写る像の変化を観察して撮影した。
+代表例として、視野絞りの開閉（図\ref{fig:exp5_field_stop}）、照明開口絞りの開閉（図\ref{fig:exp5_illum_aperture}）、対物絞りの開閉（図\ref{fig:exp5_obj_aperture}）の結果を示す。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/450nm_20um_siya.png}
+  \caption{視野絞りの開閉による像の変化（代表例）。照明される領域（視野）が変化する。}
+  \label{fig:exp5_field_stop}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/450nm_20um_Csibori.png}
+  \caption{照明側開口絞り（コンデンサ絞り）の開閉による像の変化（代表例）。照明の角度分布（NA）が変化する。}
+  \label{fig:exp5_illum_aperture}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/450nm_20um_Taibutusibori.png}
+  \caption{観察側開口絞り（対物絞り）の開閉による像の変化（代表例）。像の明るさ、コントラスト等が変化する。}
+  \label{fig:exp5_obj_aperture}
+\end{figure}
+
+\clearpage
+
+\subsection*{\underline{考察}}
+\subsection*{レポートのための課題5}
+\begin{enumerate}
+  \item \textbf{カラーフィルタ挿入時に観察された現象。}\\
+  650\,nm、450\,nm のバンドパスフィルタを視野絞り直後に挿入すると、像がぼやけ、いったんピントが外れたように見えた。
+  これは、レンズの色収差により焦点位置が波長依存でわずかに変化することによると解釈できる。
+
+  \item \textbf{ImageJによる倍率の算出と作図結果との比較。}\\
+  撮影像（例：図\ref{fig:exp5_20um_450_final}、図\ref{fig:exp5_100um_450_final}）を ImageJ で開き、格子縞の周期に相当する距離を画素単位で測定した。
+  既知の試料周期 $p$（$20\,\mu\mathrm{m}$ または $100\,\mu\mathrm{m}$）に対して、画像上の周期を $p_{\mathrm{img}}$ とすると、倍率は
+  \[
+    M_{\mathrm{meas}}=\frac{p_{\mathrm{img}}}{p}
+  \]
+  で与えられる。
+  一方、本顕微鏡は、試料を対物レンズの前側焦点（$f_{\mathrm{obj}}=70\,\mathrm{mm}$）付近に置き、対物で平行光を作って結像レンズ（$f_{\mathrm{tube}}=500\,\mathrm{mm}$）でカメラ面に結像させる無限遠補正型の配置である（図\ref{fig:microscope_setup}）。
+  このとき理論倍率は
+  \[
+    M_{\mathrm{th}}=\frac{f_{\mathrm{tube}}}{f_{\mathrm{obj}}}=\frac{500}{70}\simeq 7.14
+  \]
+  で見積もられる。
+  ImageJ から得た倍率 $M_{\mathrm{meas}}=7.27$ は $M_{\mathrm{th}}$ と同程度であり、作図に基づく倍率見積もりと整合した。
+
+  \item \textbf{各絞りの開閉による像変化。}\\
+  視野絞りを閉じると、試料面に結像する絞り像が縮小するため、照明される領域（視野）が狭くなり、不要な周辺光が減って迷光が抑制された（図\ref{fig:exp5_field_stop}）。
+  照明側の開口絞り（コンデンサ絞り）を閉じると、試料に入射する角度分布（照明NA）が小さくなり、一般にコントラストは増す一方で分解能は低下し、像は暗くなる傾向を示した（図\ref{fig:exp5_illum_aperture}）。
+  観察側の開口絞り（対物絞り）を閉じると、像形成に寄与する光線（観察NA）が制限され、像は暗くなり、細部（格子縞のエッジ）の再現性が低下する一方で、見かけのコントラストが変化した（図\ref{fig:exp5_obj_aperture}）。
+\end{enumerate}
+
+\section*{実験6. フーリエ変換と空間周波数フィルタリング}
+% \subsection*{目的}
+% 本実験の目的は、レンズによって実現されるフーリエ変換を光学系として具体的に観察し、像の空間周波数成分がどのように分布するかを理解することである。
+% さらに、フーリエ面に空間フィルタ（遮蔽板や開口）を挿入して低周波・高周波成分を選択的に通過／遮断し、像のぼけ、エッジ強調、周期構造の抽出などの変化を確認する。
+% これらを通じて、回折とフーリエ変換の対応関係、および顕微鏡像形成における空間周波数フィルタリングの基本概念を習得する。
+
+% \subsection*{方法}
+% 本実験では強度の高い光をカメラに入射させるため、手順を確認しつつ露光時間を短く設定して測定を行った。
+% まず顕微鏡を通常の結像配置とし、格子縞試料の像がカメラ上に得られることを確認した。
+% 次に、コンデンサー絞りをできるだけ絞り、カメラの露光時間を 1\,ms 以下に設定した上で、対物絞りを取り外した。
+% その後、カメラを対物絞り位置（フーリエ面）に移動し、前後位置を微調整して格子縞の回折像（フーリエ像）が最も鮮明となる条件を探索した。
+% この条件で、$20\,\mu\mathrm{m}$ および $100\,\mu\mathrm{m}$ 間隔の格子縞試料について回折像を撮影した。
+
+% 続いてカメラを元の像面位置に戻し、コンデンサー絞りと露光時間を調整して試料像が再び得られることを確認した。
+% 最後に、対物絞り位置に空間フィルタ（縦スリット、横スリットを含む）を挿入し、通過させる空間周波数成分を変化させながら、像がどのように変化するかを観察して撮影した。
+
+\textcolor{red}{\textbf{ちょっと内容がムズかしかったので、一旦保留で！}}
+
+\clearpage
+
+\section*{実験7. 振幅コントラストと位相コントラスト}
+\subsection*{\underline{目的}}
+本実験の目的は、これまで用いてきた白黒コントラストが明瞭な試料と、位相物体である哺乳類細胞（HeLa cell）とを比較することで、
+顕微鏡像における振幅コントラストおよび位相コントラストの生成機構を理解することである。
+
+\subsection*{\underline{方法}}
+まず、これまで用いていた白黒コントラストが明瞭な試料を用い、カメラ位置を調整して像が鮮明に観察できる状態に合わせた。
+次に、試料を哺乳類細胞（HeLa cell）に交換し、同一の光学条件で細胞像を撮影した。
+その後、初期条件からカメラ位置を光軸方向に前後させた場合の像変化を観察し、それぞれの条件で細胞像を撮影した。
+さらに、コンデンサ絞りを閉じた場合についても像変化を観察し、それぞれの条件で細胞像を撮影した。
+
+\clearpage
+\onecolumn
+
+\subsection*{\underline{結果}}
+HeLa 細胞について、(i) 焦点を合わせた基準条件、
+(ii) カメラ位置を光軸方向に前後させた条件、
+(iii) コンデンサ絞りを閉じた条件の3通りで撮影を行った。
+以下に、それぞれの条件で得られた細胞像を示す。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\linewidth]{./figure/hela.png}
+  \caption{HeLa細胞の明視野像。白黒コントラストが明瞭な試料で調整した光学条件を保ったまま、カメラ位置を焦点に合わせて撮影した。位相物体である細胞は透過強度差が小さく、輪郭のコントラストは弱い。}
+  \label{fig:exp7_default}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.48\linewidth]{./figure/hela_close_1cm.png}
+  \includegraphics[width=0.48\linewidth]{./figure/hela_far_1cm.png}
+  \caption{HeLa細胞像。基準条件からカメラ位置を光軸方向に前後へ 1\,cm 移動させて撮影した（デフォーカス条件）。左が1cm近づけた写真で、右が1cm遠ざけた写真である。位相差が強度差へ変換され、細胞輪郭が陰影として可視化された。前後移動により陰影の向きがおよそ反転している様子も確認できる。}
+  \label{fig:exp7_defocus}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.48\linewidth]{./figure/hela_sibori.png}
+  \includegraphics[width=0.48\linewidth]{./figure/hela_sibori_close_1cm.png}
+  \caption{HeLa細胞像。コンデンサ絞りを閉じた条件で撮影した像。照明NAの低下により位相差由来のコントラストが増大し、細胞輪郭が明瞭に観察された。さらにデフォーカスを与えることで、輪郭強調が顕著となった。}
+  \label{fig:exp7_aperture}
+\end{figure}
+
+\twocolumn
+
+\subsection*{\underline{考察}}
+
+\subsection*{レポートのための課題7}
+
+HeLa 細胞像が見えやすくなった理由を、（A）カメラ位置の前後移動（デフォーカス）による効果と、
+（B）コンデンサ絞りを閉じることによる効果と分けて考察する。以下にそれぞれの要因を整理する。
+
+\subsubsection*{(A) カメラ位置の前後移動（デフォーカス）}
+\begin{enumerate}
+  \item \textbf{位相差が強度差へ変換されたこと（位相コントラストの生成）。}\\
+  HeLa 細胞は吸収が小さく、主に屈折率や厚みの違いによって位相のみを変化させる位相物体である。
+  焦点を厳密に合わせた明視野条件では、透過光の強度差が小さいためコントラストが弱い。
+  一方、カメラ位置を前後に移動させると、位相の空間変調が回折を通じて振幅変調へと変換され、
+  細胞輪郭が明暗（陰影）として可視化される。
+
+  \item \textbf{前後移動で陰影の向きが変化すること。}\\
+  デフォーカスの符号（像面が焦点面の前後どちらにあるか）を変えると、位相から強度への変換の符号が変化し、
+  輪郭に現れる明暗の向きが反転する。
+  図\ref{fig:exp7_defocus}で観察された陰影の向きの変化は、この性質と整合的である。
+\end{enumerate}
+
+\subsubsection*{(B) コンデンサ絞りを閉じる}
+\begin{enumerate}
+  \item \textbf{照明NAの低下による位相由来コントラストの増大。}\\
+  コンデンサ絞りを閉じると、試料に入射する光の角度分布が狭くなり、照明の開口数（NA）が低下する。
+  これにより、異なる方向からの光の重ね合わせが減少し、位相差による干渉効果が平均化されにくくなる。
+  その結果、位相差由来のコントラストが増大し、細胞像が見えやすくなる。
+
+  \item \textbf{空間コヒーレンスの向上。}\\
+  照明の角度分布が狭くなると、試料面での空間コヒーレンスが向上する。
+  空間コヒーレンスが高い条件では、位相差による干渉効果が顕著となり、位相物体の構造が強度分布として観察されやすくなる。
+
+  \item \textbf{近軸近似に近づくことによる像形成の単純化。}\\
+  照明NAを下げることは、主に光軸近傍を通る光線のみを用いることに対応する。
+  このとき光学系は近軸近似がより良く成り立つ条件となり、位相変化が単純な光路差として像形成に反映されやすくなる。
+  \[
+  \sin\theta \simeq \theta \simeq \tan\theta
+  \]
+\end{enumerate}
 
 
+コントラストと分解能はトレードオフだと言える。コンデンサ絞りを閉じた条件では、位相由来のコントラストは増大する一方で、高角度成分が除去されるため分解能は低下し、像は暗くなる傾向を示す。
+本実験では、分解能低下よりもコントラスト向上の効果が支配的であったため、細胞輪郭が見えやすくなったと解釈できる。
 
-\section*{実験の感想}
-\subsubsection*{Day1}
-目に見えるのが嬉しい。
+\clearpage
+\section*{実験8. 生物試料の観察}
+\subsection*{\underline{目的}}
+アナカリスの原形質流動およびクラミドモナスの遊泳運動を動画撮影し、生物試料の運動を定性的・定量的に観察する。
+
+\subsection*{\underline{方法}}
+生物試料としてアナカリス（オオカナダモ）およびクラミドモナス（コナミドリムシ）を作成した顕微鏡で観察し、それぞれについて動画撮影を行った。
+まず、開口絞りが十分に開いていることを確認し、撮影時のフレームレート（撮影速度）を記録した。
+次に、アナカリスでは細胞内の顆粒の移動を指標として原形質流動の様子を動画撮影した。
+続いて、クラミドモナスでは視野内を移動する個体の運動を動画撮影し、遊泳していない場合には沈降する様子を撮影した。
+
+\subsection*{\underline{結果}}
+アナカリスおよびクラミドモナスについて動画撮影を行い、代表フレームを静止画として図に示す。
+撮影時のフレームレートは アナカリスは$1\,\mathrm{fps}$、クラミドモナスは$10\,\mathrm{fps}$であった。
+
+\subsubsection*{アナカリス（原形質流動）}
+アナカリス細胞内の顆粒が一定方向に移動する様子が観察された。
+代表フレームを図\ref{fig:exp8_anacharis}に示す。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/exp8_anacharis_frame.png}
+  \caption{アナカリスの原形質流動の代表フレーム。動画中で細胞内顆粒が一定方向に移動する様子が確認された。}
+  \label{fig:exp8_anacharis}
+\end{figure}
+
+\subsubsection*{クラミドモナス（遊泳運動）}
+クラミドモナスが視野内を移動する様子を観察した。
+代表フレームを図\ref{fig:exp8_chlamy}に示す。
+（遊泳が見られない個体については、沈降する様子を記録した。）
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/exp8_chlamy_frame.png}
+  \caption{クラミドモナスの運動の代表フレーム。動画中で個体が視野内を移動する様子を記録した。}
+  \label{fig:exp8_chlamy}
+\end{figure}
+
+\textcolor{red}{Q.これ、どう見せればいいの？ 動画を静止画にして伝えるの難しい。}
+
+\subsection*{\underline{考察}}
+\subsection*{レポートのための課題8}
+
+本実験では、クラミドモナスの遊泳運動を観察し、その遊泳速度を求めることを目的とした。
+しかし、本班で観察したクラミドモナスは活性が低く、明瞭な遊泳運動が確認できなかった。
+そこで TA の判断のもと、他班が撮影した動画データを用いて解析を行った。
+
+動画のフレームレートを $10\,\mathrm{fps}$ とし、
+連続する 10 フレーム間（時間 $\Delta t = 10/f_{\mathrm{fps}}$）におけるクラミドモナスの移動距離 $\Delta x$ を測定した。
+各区間について速度
+\[
+v = \frac{\Delta x}{\Delta t}
+\]
+を求め、その平均値をクラミドモナスの遊泳速度とした。
+
+測定結果を表\ref{tab:exp8_velocity}に示す。
+
+\onecolumn
+
+\begin{table}[H]
+\centering
+\caption{クラミドモナスの遊泳距離および速度（10フレーム間）}
+\label{tab:exp8_velocity}
+\begin{tabular}{cccc}
+\toprule
+測定番号 & 移動距離 $\Delta x$ [$\mathrm{px}$] & 時間 $\Delta t$ [s] & 速度 $v$ [$\mu\mathrm{m/s}$] \\
+\midrule
+1 & 180.27 & 1.0 & 128.94 \\
+2 & 219.32 & 1.0 & 156.87 \\
+3 & 160.46 & 1.0 & 114.77 \\
+4 & 222.99 & 1.0 & 159.50 \\
+\midrule
+平均 &  & & $\bar v= 140\,\mu\mathrm{m/s}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\twocolumn
+
+以上より、クラミドモナスの遊泳速度は
+\[
+\bar v = 140\,\mu\mathrm{m/s}
+\]
+と見積もられた。
+
+\section*{実験9. 暗視野照明と限外顕微鏡}
+\subsection*{\underline{目的}}
+暗視野照明を構成して回折限界以下（200\,nm）の金ナノ粒子を輝点として観察し、
+絞り条件およびレンズの有効径が像の明るさと大きさに与える影響を確認する。
+
+\subsection*{\underline{方法}}
+まず、$500\,\mu\mathrm{m}$ 格子縞試料を用い、格子縞の中心線がカメラ画像の中央に一致するように試料位置を調整した。
+次に、カメラの蓋を閉めて受光面に外光が入らないようにし、以降は試料ホルダより下流の光学素子は動かさない条件で調整を行った。
+
+照明側のレンズを取り外し、コンデンサレンズとして焦点距離 $f=70\,\mathrm{mm}$ のレンズを試料から $70\,\mathrm{mm}$ の位置に配置した。
+ミラーを平行移動させてレーザー光がコンデンサレンズに入射するように調整し、ミラーで反射させたレーザー光が入射光と平行に進むことを確認した。
+続いて、コンデンサレンズ位置を微調整して格子縞の中心にレーザー光が当たるように合わせた。
+対物開口絞りを適度に閉じ、レーザーの直達光が対物レンズに入射しない条件を作ったうえで、試料で散乱された光のみが対物レンズを通過してカメラに結像する暗視野照明であることを確認した。
+
+試料を金ナノ粒子（粒径 $200\,\mathrm{nm}$）に交換し、回折限界以下の粒子が輝点として観察できることを確認して撮影した。
+さらに、絞りの直径を $5\text{--}10\,\mathrm{mm}$ 程度に設定し、複数（5個程度）の粒子について像を撮影した。
+得られたコロイド像から輝点像の大きさを測定し、絞り条件（レンズの有効径）との関係を理論値と比較した。
+
+\subsection*{\underline{結果}}
+暗視野照明の条件（直達光が対物レンズに入射せず、散乱光のみが結像する条件）を実現し、
+金ナノ粒子（粒径 $200\,\mathrm{nm}$）が輝点として観察できることを確認した。
+代表的なコロイド像を図\ref{fig:exp9_overview}に示す。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\linewidth]{./figure/exp9_overview.png}
+  \caption{暗視野照明下で観察した金ナノ粒子（$200\,\mathrm{nm}$）のコロイド像（代表例）。粒子は背景に対して輝点として観察される。}
+  \label{fig:exp9_overview}
+\end{figure}
+
+絞り直径を $5\text{--}10\,\mathrm{mm}$ の範囲で変化させて複数粒子を撮影し、輝点像の見かけの大きさを測定した。
+定量結果の整理（絞り直径と輝点像径の関係）は考察（課題9）に示す。
+
+
+% --- 実験9 考察・課題9 ここから挿入 ---
+\subsection*{\underline{考察}}
+\subsection*{レポートのための課題9（考察）}
+
+本実験10では、観察中の絞り直径は常に $D=10\,\mathrm{mm}$ に固定していた。
+実験2で得られた回折理論に基づけば、有効径 $D=10\,\mathrm{mm}$ に対する集光像の大きさは
+\[
+d_{\mathrm{th}} \simeq 38\,\mu\mathrm{m}
+\]
+と見積もられる。
+
+一方、暗視野照明下で観察した金ナノ粒子の輝点像について、
+ガウスフィッティングにより得られた幅パラメータは
+$d = 2.35,\,2.61,\,2.46,\,2.95\,\mathrm{px}$ であった。
+ここでカメラの画素サイズ $1\,\mathrm{px}=5.2\,\mu\mathrm{m}$ を用いると、
+対応する像の大きさは
+\[
+d \simeq 12\text{--}15\,\mu\mathrm{m}
+\]
+となる。
+
+この測定値は、回折理論から見積もられる $d_{\mathrm{th}} \simeq 38\,\mu\mathrm{m}$ よりも十分に小さく、
+本実験で観察された輝点像が、対物レンズの有効径による分解能限界を超えて
+「小さく見えている」ことを示している。
+
+これは、暗視野照明および限外顕微鏡では粒子の形状を分解して観察しているのではなく、
+粒子による散乱光の存在を輝点として検出しているためである。
+すなわち、本実験結果は、回折限界以下の粒子であっても、
+散乱光を用いればその存在を検出できることを示している。
+
+% --- 実験9 考察・課題9 ここまで ---
+
+% \subsubsection*{Day1}
+% 目に見えるのが嬉しい。
 \end{document}
 
+% 5の結果とレポートのための課題5めっちゃ適当。chatGPTが書いてる。後で要修正
 % 実験4までDONE
 % NA: 実験5。目的の文章だいぶ怪しい。
+
+platex main.tex
+dvipdfmx main.dvi
